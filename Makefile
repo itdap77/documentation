@@ -13,7 +13,7 @@ user-manual-html:
 	cd user_manual && make html
 	@echo "User manual build finished; HTML is updated"
 
-developer-manual-html: icons-docs
+developer-manual-html: openapi-spec icons-docs
 	rm -rf developer_manual/_build/html/com
 	cd developer_manual && make html
 	@echo "Developer manual build finished; HTML is updated"
@@ -26,10 +26,16 @@ user-manual-pdf:
 	cd user_manual && make latexpdf
 	@echo "User manual build finished; PDF is updated"
 
-icons-docs: clean-icons-docs
+get-server-sources:
 	cd build && sh get-server-sources.sh $(DRONE_BRANCH)
+
+icons-docs: clean-icons-docs get-server-sources
 	cd build && composer install && composer update
 	cd build && php generateIconsDoc.php
+
+openapi-spec: get-server-sources
+	cd build/openapi-extractor && composer install
+	cd build && sh generate-openapi.sh
 
 clean: clean-icons-docs
 	rm -r admin_manual/_build developer_manual/_build user_manual/_build user_manual_de_/_build

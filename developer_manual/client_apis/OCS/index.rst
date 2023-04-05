@@ -4,11 +4,14 @@
 OCS API
 ===============================
 
-.. toctree::
+To browse the OCS API documentation please go `here <../../_static/openapi.html>`_.
 
-   ocs-api-overview
-   ocs-share-api
-   ocs-sharee-api
-   ocs-status-api
-   ocs-recommendations-api
-   ocs-user-preferences-api
+Notifications API
+-----------------
+
+There is also the `Notifications API <https://github.com/nextcloud/notifications/blob/master/docs/ocs-endpoint-v2.md>`_
+
+Activity API
+------------
+
+Find the documentation in the `Activity app repo <https://github.com/nextcloud/activity/blob/master/docs/endpoint-v2.md>`__.

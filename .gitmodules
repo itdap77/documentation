@@ -1,0 +1,3 @@
+[submodule "build/openapi-extractor"]
+	path = build/openapi-extractor
+	url = git@github.com:nextcloud-gmbh/openapi-extractor.git
