@@ -49,7 +49,7 @@ Sharing your data in the global address book
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some administrators decide to share their global address book with other Nextcloud instances (so called *Trusted Servers*) or even with the wider world. 
-This is helpful when two instances want to work closely together, or when people want to use Nextcloud as a virtual telephone book for others to peruse.
+This is helpful when two instances want to work closely together, or when people want to use Nextcloud as a virtual telephone book for others to browse.
 It also allows searching for contacts, creating shares and much more.
 
 You can change what personal data of yours is shared by setting the scope of your data. Clicking on the lock icon will open the following dropdown
