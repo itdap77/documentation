@@ -19,9 +19,9 @@ Now you need to create a database user and the database itself by using the
 MySQL command line interface. The database tables will be created by Nextcloud
 when you login for the first time.
 
-To start the MySQL command line mode use the following command::
+To start the Mariadb command line mode use the following command::
 
-  sudo mysql
+  sudo mariadb
 
 Then a **MariaDB [root]>** prompt will appear. Now enter the following lines,
 replacing ``username`` and ``password`` with appropriate values, and confirm
